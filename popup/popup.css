@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 320px;
+  margin: 0;
+  padding: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #ffffff;
+  color: #222;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.total-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #f4f6f8;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.total-time strong {
+  font-size: 18px;
+}
+
+.site-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.site-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 4px;
+  border-bottom: 1px solid #eee;
+  font-size: 13px;
+}
+
+.site-item:last-child {
+  border-bottom: none;
+}
+
+.site-name {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.site-time {
+  font-weight: 500;
+}
+
+.footer {
+  margin-top: 10px;
+  font-size: 11px;
+  text-align: center;
+  color: #777;
+}

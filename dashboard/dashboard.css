@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+transition: background-color 0.2s ease,
+            color 0.2s ease,
+            transform 0.2s ease,
+            box-shadow 0.2s ease,
+            opacity 0.2s ease;
+}
+
+body {
+  margin: 0;
+  padding: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f8f9fb;
+  color: #222;
+  opacity: 0;
+  animation: fadeIn 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+header {
+  margin-bottom: 16px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+header p {
+  font-size: 13px;
+  color: #666;
+}
+
+.summary {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary strong {
+  font-size: 22px;
+}
+
+.chart-section {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.history {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.history h3 {
+  margin-top: 0;
+}
+
+#siteList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.site-item:last-child {
+  border-bottom: none;
+}
+
+#datePicker {
+  margin-top: 6px;
+  padding: 6px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.weekly {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.weekly-total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#weeklyTopSites {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.weekly-site {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.weekly-site:last-child {
+  border-bottom: none;
+}
+
+.summary,
+.chart-section,
+.history,
+.weekly {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.summary:hover,
+.chart-section:hover,
+.history:hover,
+.weekly:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.site-item,
+.weekly-site {
+  transition: background-color 0.15s ease, padding-left 0.15s ease;
+}
+
+.site-item:hover,
+.weekly-site:hover {
+  background-color: #f3f4f6;
+  padding-left: 6px;
+}
+
+
+#datePicker:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+.site-item:only-child {
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+}

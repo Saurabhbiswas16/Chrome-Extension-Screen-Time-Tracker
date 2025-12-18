@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Screen Time Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Screen Time Dashboard</h1>
+      <p>Daily usage & website breakdown</p>
+    </header>
+
+    <section class="summary">
+        <div>
+            <h2 id="selectedDate">Today</h2>
+            <input type="date" id="datePicker" />
+        </div>
+        <strong id="totalTime">0m</strong>
+    </section>
+
+    <section class="chart-section">
+      <canvas id="usageChart" width="600" height="300"></canvas>
+    </section>
+
+    <section class="history">
+      <h3>Website Usage</h3>
+      <ul id="siteList"></ul>
+    </section>
+
+    <section class="weekly">
+        <h3>Weekly Summary (Last 7 Days)</h3>
+
+        <div class="weekly-total">
+            <span>Total Screen Time</span>
+            <strong id="weeklyTotal">0m</strong>
+        </div>
+
+        <canvas id="weeklyChart" width="600" height="300"></canvas>
+
+        <ul id="weeklyTopSites"></ul>
+    </section>
+    <script src="dashboard.js"></script>
+  </body>
+</html>

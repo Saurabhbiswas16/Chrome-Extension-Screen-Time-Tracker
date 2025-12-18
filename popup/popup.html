@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Screen Time Tracker</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Screen Time</h1>
+
+      <div class="total-time">
+        <span>Total Today</span>
+        <strong id="totalTime">0m</strong>
+      </div>
+
+      <ul id="siteList" class="site-list">
+        <!-- Dynamically populated -->
+      </ul>
+
+      <div class="footer">
+        <span>Today</span>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+  <footer>
+    <button id="openDashboard">Open Dashboard</button>
+  </footer>
+</html>
