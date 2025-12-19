@@ -52,15 +52,10 @@ and weekly browsing habits in a clean, privacy-friendly dashboard.
     │   └── popup.js
     │
     ├── dashboard/
-    │   ├── dashboard.html
-    │   ├── dashboard.css
-    │   └── dashboard.js
-    │
-    └── icons/
-        ├── icon16.png
-        ├── icon32.png
-        ├── icon48.png
-        └── icon128.png
+        ├── dashboard.html
+        ├── dashboard.css
+        └── dashboard.js
+ 
 
 ------------------------------------------------------------------------
 
